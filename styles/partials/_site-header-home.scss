@@ -1,0 +1,93 @@
+.site-header-home {
+    position: relative;
+    margin-top: 50px;
+
+    &__titles {
+        background-color: rgba(255, 255, 255, .85);
+        border-radius: 3px;
+        padding: 10px 0;
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        @include atSmall {
+            padding: 25px 0;
+            width: 400px;
+        }
+
+        @include atMedium {
+            padding: 25px 0;
+            width: 500px;
+        }
+
+        @include atLarge {
+            padding: 50px 0;
+            width: 600px;
+        }
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    h1 {
+        background-color: #fff;
+        font-family: $title-font-stack;
+        padding-left: .5rem;
+        margin: .5rem 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+        
+        a {
+            color: $dark-blue;
+            text-decoration: none;
+        }
+    }
+
+    h2 {
+        font-family: $title-font-stack;
+        font-size: 1.7rem;
+
+        @include atSmall {
+            font-size: 1.9rem;
+        }
+
+        @include atMedium {
+            font-size: 2rem;
+        }
+
+        @include atLarge {
+            font-size: 4rem;
+        }
+
+        a {
+            color: $dark-blue;
+            text-decoration: none;
+        }
+    }
+
+    h5 {
+        font-size: .8rem;
+        font-weight: 400;
+
+       @include atSmall {
+            font-size: 1.1rem;
+        }
+
+        @include atMedium {
+            font-size: 1.5rem;
+        }
+
+        @include atLarge {
+            font-size: 1.7rem;
+        }
+    }
+
+}

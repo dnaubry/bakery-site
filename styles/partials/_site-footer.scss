@@ -1,0 +1,43 @@
+.site-footer {
+    border-top: 2px double $dark-blue;
+    font-family: $title-font-stack;
+    font-size: .9rem;
+    padding-left: .5rem;
+
+    @include atSmall {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+
+    a {
+        color: $dark-pink;
+        text-decoration: none;
+
+        &:hover {
+            color: $dark-blue;
+        }
+    }
+
+    p {
+        @include atMedium {
+            display: inline-block;
+            width: 39%;
+        }
+    }
+
+    .footer-nav {
+        display: none;
+
+        @include atMedium {
+            display: inline-block;
+            text-align: right;
+            width: 60%;
+
+            li {
+                display: inline;
+                list-style: none;
+                padding-right: 1rem;
+            }   
+        }
+    }
+}

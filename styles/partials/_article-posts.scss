@@ -1,0 +1,80 @@
+.article-posts {
+    border-top: 5px double $dark-blue;
+    font-family: $main-font-stack;
+    margin: 1rem;
+
+    @include atSmall {
+        margin: 2rem;
+    }
+
+    @include atLarge {
+        margin: 3rem;
+    }
+
+    a {
+            color: $dark-pink;
+            text-decoration: none;
+
+            &:hover {
+                color: $dark-blue;
+            }
+        }
+
+    h2 {
+        font-family: $title-font-stack;
+        font-size: 1.8rem;
+        text-align: center;
+        background-color: #fff;
+        position: relative;
+        top: -45px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: -35px;
+        width: 120px;
+    }
+
+    h3 {
+        font-family: $title-font-stack;
+        font-size: 1.5rem;
+        border-bottom: .5px solid $dark-blue;
+    }
+
+    article {
+        min-width: 100%;
+        padding: .2rem;
+
+        @include atMedium {
+            min-width: 50%;
+            max-width: 50%;
+            padding: 1rem;
+        }
+
+        @include atLarge{
+            min-width: 33%;
+            max-width: 33%;
+            padding: 1rem;
+        }
+
+        a {
+            color: $dark-pink;
+            text-decoration: none;
+
+            &:hover {
+                color: $dark-blue;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 3px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+    }
+
+    &__more {
+        border-top: 1px solid $dark-blue;
+        border-bottom: 1px solid $dark-blue;
+        text-align: center;
+    }
+}

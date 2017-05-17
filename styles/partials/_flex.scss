@@ -1,0 +1,10 @@
+.flex {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex: 1;
+    }
+}

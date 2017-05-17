@@ -1,0 +1,104 @@
+.contact-menu {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @include atSmall {
+        margin: 2rem;
+    }
+
+    @include atLarge {
+        margin: 3rem;
+    }
+
+    h3 {
+       font-family: $title-font-stack;
+       border-bottom: .5px solid $dark-blue;
+
+       a {
+            color: $dark-pink;
+            text-decoration: none;
+
+           &:hover {
+               color: $dark-blue;
+           }
+       }
+   }
+
+   ul {
+       padding: 0;
+   }
+
+   li {
+       font-family: $main-font-stack;
+       list-style: none;
+       padding: .5rem 0;
+   } 
+
+   &__contact {
+
+        table {
+            font-family: $main-font-stack;
+            width: 100%;
+
+            @include atSmall {
+                width: 400px;
+            }
+
+            td {
+                font-size: .9rem;
+            }
+
+            .column-1 {
+                width: 41%;
+
+                @include atSmall {
+                    width: 51%;
+                }
+            }
+
+            .column-2, .column-4 {
+                width: 22%;
+            }
+
+            .column-3 {
+                width: 5%;
+            }
+        }
+   }
+
+   &__menu {
+        text-align: center;
+
+       @include atSmall {
+           text-align: left;
+       }
+
+       h3 {
+           text-align: left;
+       }
+
+        table {
+            display: inline-block;
+            font-family: $main-font-stack;
+            width: 300px;
+
+            @include atSmall {
+                width: 200px;
+            }
+
+            td {
+            font-size: .9rem;
+            }
+
+            .column-1, .column-2 {
+                width: 150px;
+                
+                @include atSmall {
+                    width: 100px;
+                }
+            }
+        } 
+   }
+}

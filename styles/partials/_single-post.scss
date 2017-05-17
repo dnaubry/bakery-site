@@ -1,0 +1,29 @@
+.single-post {
+    font-family: $main-font-stack;
+        margin: 4.5rem .5rem 2rem;
+
+    @include atSmall {
+        margin: 4.5rem 1rem 2rem;
+    }
+
+    @include atMedium {
+        margin: 4.5rem 2rem 2rem;
+    }
+
+    h2 {
+        font-family: $title-font-stack;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.contact-list {
+   padding: 0;
+
+    li {
+        list-style: none;
+    }
+}

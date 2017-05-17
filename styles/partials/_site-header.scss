@@ -1,0 +1,19 @@
+.site-header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+
+    h1 {
+        font-family: $title-font-stack;
+        padding-left: .5rem;
+        margin: .5rem 0;
+
+        a {
+            color: $dark-blue;
+            text-decoration: none;
+        }
+    }
+}
