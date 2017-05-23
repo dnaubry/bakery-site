@@ -5,11 +5,7 @@
     justify-content: space-around;
 
     @include atSmall {
-        margin: 2rem;
-    }
-
-    @include atLarge {
-        margin: 3rem;
+        margin: 3rem 2rem 4rem;
     }
 
     h3 {

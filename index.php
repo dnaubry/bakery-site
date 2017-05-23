@@ -8,6 +8,7 @@ endif;
 
 ?>
 
+<!-- contact and menu -->
 <div class="contact-menu">
 
 <?php
@@ -52,8 +53,9 @@ if ($menu_query->have_posts()) :
 
 </div>
 
-</div>
+</div><!-- contact and menu -->
 
+<!-- articles -->
 <div class="article-posts">
 
     <h2>Articles</h2>
@@ -86,7 +88,7 @@ if ($category_posts->have_posts()) :
     <div class="article-posts__more">
         <p>more <a href="/category/articles">Articles</a></p>
     </div>
-</div>
+</div><!-- articles -->
 
 <?php
 

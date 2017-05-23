@@ -4,7 +4,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 20;
+    z-index: 10;
+
+    &__title {
+        width: 250px;
+        // display: inline-block;
+    }
 
     h1 {
         font-family: $title-font-stack;
@@ -14,6 +19,7 @@
         a {
             color: $dark-blue;
             text-decoration: none;
+            cursor: pointer;
         }
     }
 }

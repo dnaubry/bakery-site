@@ -22,9 +22,14 @@
 
         <!-- site-header -->
         <header class="site-header">
-            <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+            <div class="site-header__title">
+                <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+            </div>
+
+            <?php get_search_form(); ?>
 
             <nav class="site-nav">
+                
                 <?php
 
                 $args = array(
@@ -36,6 +41,6 @@
                 <?php wp_nav_menu( $args ); ?>
             </nav>
 
-            <div class="menu-icon"><span class="dashicons dashicons-menu"></span><div>
+            <div class="menu-icon"><span id="menu-icons" class="dashicons dashicons-menu"></span><div>
 
         </header><!-- site-header -->

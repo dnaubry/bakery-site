@@ -37,14 +37,17 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 20; }
+  z-index: 10; }
+  .site-header__title {
+    width: 250px; }
   .site-header h1 {
     font-family: "Ovo", serif;
     padding-left: .5rem;
     margin: .5rem 0; }
     .site-header h1 a {
       color: #00004C;
-      text-decoration: none; }
+      text-decoration: none;
+      cursor: pointer; }
 
 .site-header-home {
   position: relative;
@@ -96,7 +99,7 @@ html {
         font-size: 1.9rem; } }
     @media (min-width: 800px) {
       .site-header-home h2 {
-        font-size: 2rem; } }
+        font-size: 2.5rem; } }
     @media (min-width: 1200px) {
       .site-header-home h2 {
         font-size: 4rem; } }
@@ -111,7 +114,7 @@ html {
         font-size: 1.1rem; } }
     @media (min-width: 800px) {
       .site-header-home h5 {
-        font-size: 1.5rem; } }
+        font-size: 1.3rem; } }
     @media (min-width: 1200px) {
       .site-header-home h5 {
         font-size: 1.7rem; } }
@@ -132,7 +135,8 @@ html {
       top: 0;
       left: 0;
       right: auto;
-      width: 100%; }
+      width: calc(100% - 250px);
+      margin-left: 250px; }
       .site-nav li {
         display: inline;
         padding-right: 1rem;
@@ -322,10 +326,7 @@ html {
       justify-content: space-around; }
   @media (min-width: 580px) {
     .contact-menu {
-      margin: 2rem; } }
-  @media (min-width: 1200px) {
-    .contact-menu {
-      margin: 3rem; } }
+      margin: 3rem 2rem 4rem; } }
   .contact-menu h3 {
     font-family: "Ovo", serif;
     border-bottom: 0.5px solid #00004C; }
@@ -378,3 +379,62 @@ html {
         @media (min-width: 580px) {
           .contact-menu__menu table .column-1, .contact-menu__menu table .column-2 {
             width: 100px; } }
+
+.search-form {
+  position: fixed;
+  right: 55px;
+  top: 3px;
+  z-index: 10; }
+  @media (min-width: 800px) {
+    .search-form {
+      position: fixed;
+      right: 410px;
+      top: 4px; } }
+  .search-form .screen-reader-text {
+    position: fixed;
+    right: -9999px; }
+
+.search-field {
+  background-color: transparent;
+  background-image: url(images/search-icon-blue.png);
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  border: none;
+  cursor: pointer;
+  font-family: "Muli", sans-serif;
+  height: 37px;
+  margin: 3px 0;
+  padding: 0 0 0 34px;
+  position: relative;
+  -webkit-transition: width 400ms ease, background 400ms ease;
+  transition: width 400ms ease, background 400ms ease;
+  width: 0; }
+  @media (min-width: 800px) {
+    .search-field {
+      background-image: url(images/search-icon-pink.png); } }
+
+.search-field:focus {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: text;
+  outline: 0;
+  width: 230px; }
+
+.search-form
+.search-submit {
+  display: none; }
+
+.search-results {
+  margin: 4.5rem 1rem; }
+  .search-results h2 {
+    color: #00004C;
+    font-family: "Ovo", serif; }
+  .search-results article {
+    margin: 2rem 1rem; }
+    .search-results article h3 {
+      font-family: "Ovo", serif; }
+      .search-results article h3 a {
+        color: #b60936; }
+        .search-results article h3 a:hover {
+          color: #00004C; }
